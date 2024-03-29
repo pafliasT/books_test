@@ -1,0 +1,8 @@
+###
+POST  http://localhost:4004/odata/v4/my/Books
+Content-Type: application/json
+
+{
+    "ID" : 11,
+    "title": "asdfasdfas"
+}

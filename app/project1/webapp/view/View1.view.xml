@@ -1,0 +1,23 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <List
+            id="booksTable"
+            items="{/Books}"
+            headerText="Books List"
+            noDataText="No books available"
+            mode="SingleSelectMaster"
+            selectionChange="onSelectionChange">
+            <items>
+
+                <StandardListItem
+                    id="test"
+                    title="{title}"
+                    icon="sap-icon://course-book"
+                    type="Active"
+                    press="onItemPress" />
+            </items>
+        </List>
+    </Page>
+</mvc:View>
